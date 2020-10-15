@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Recorder</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- HEADER -->
+    <div class="row" id="header">
+      <h2>Books Recorder</h2>
+      <!-- icon of book -->
+      <svg class="bi bi-book" width="2em" height="3.5em" viewBox="0 0 16 16" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z" />
+        <path fill-rule="evenodd"
+          d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z" />
+      </svg>
+    </div>
+    <!-- MESSAGE -->
+    <div class="row" id="message">
+
+    </div>
+    <div class="container">
+      <!-- ADD  -->
+      <div class="row">
+        <div class="cols" id="add-heading">
+          <h1>Add Your Books</h1>
+        </div>
+        <!-- FORM -->
+        <div class="cols" id="add-form">
+          <form id="addBookForm">
+            <div class="form-group row">
+              <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name of Book">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputAuthor" class="col-sm-2 col-form-label">Author</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputAuthor" placeholder="Author">
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="Programming" value="Programming"
+                      checked>
+                    <label class="form-check-label" for="Radios1">
+                      Programming
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="Fiction" value="Fiction">
+                    <label class="form-check-label" for="Radios2">
+                      Fiction
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input class="form-check-input" type="radio" name="type" id="Biography" value="Biography">
+                    <label class="form-check-label" for="Radios3">
+                      Biography
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <label for="inputStart" class="col-sm-2 col-form-label">Start Date</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="inputStart">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEnd" class="col-sm-2 col-form-label">Completion Date</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="inputEnd">
+              </div>
+            </div>
+            <div class="form-group row" id="addBtn">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">ADD</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- DISPLAY -->
+      <div class="row" id="display">
+        <div class="cols" id="display-heading">
+          <h1>Your Book's Record</h1>
+        </div>
+        <div class="cols" id="display-table">
+          <table border="1">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Author</td>
+                <td>Type</td>
+                <td>Start</td>
+                <td>Complete</td>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="row" id="footer">
+      <h5>Copyright © Soumya Agarwal 2020</h5>
+    </div>
+  </div>
+</body>
+<script src="script2.js"></script>
+
+</html>
