@@ -1,0 +1,103 @@
+/* HEADER */
+#header{
+    background-color: black;
+    color: white;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header h2{
+    margin: 5px;
+    margin-right: 10px;
+    text-align:center;
+}
+/* ADD */
+#add-heading h1{
+    font-size: 26px;
+    padding-left: 15px;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* FORM */
+#add-form{
+    /* width: 100%; */
+    background-color: rgb(241, 54, 91);
+}
+.form-group{
+    padding:35px;
+    margin-bottom: -45px;   
+}
+.form-control{
+    border-radius: 10px;
+    width: 75%;
+}
+label{
+    font-size: 20px;
+}
+legend{
+    border-bottom: none;
+}
+#addBtn{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.btn{
+    padding: 8px 20px;
+    border-radius:20px;
+    background-color:rgb(4, 0, 255);
+}
+/* DISPLAY */
+#display{
+    margin-bottom: 20px;
+}
+#display-heading{
+    margin-bottom: 20px;
+}
+#display-heading h1{
+    font-size: 26px;
+    padding-left: 15px;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#display-table{
+  display: flex;
+  justify-content: space-around;
+}
+#display-table table{
+    width: 100%;
+}
+#display-table table tr td{
+    padding: 15px 9px;
+    text-align: center;
+}
+thead{
+    background-color: rgb(156, 154, 154);
+    color: black;
+    font-size: 18px;
+}
+#noBooks{
+    text-align: center;
+    padding: 15px;
+}
+/* FOOTER */
+#footer{
+    background-color: black;
+    color: white;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 767px) {
+    .form-control{
+        width:97%;
+    }
+}
+@media (max-width: 297px) {
+    #header h2{
+        font-size: 25px;
+    }
+}
